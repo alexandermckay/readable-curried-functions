@@ -34,3 +34,15 @@
 ### Settings
 
 - The `.vscode/settings.json` file triggers `prettier-eslint` to run on save of Javascript files and `prettier` to run on the save of JSON files. These settings are project specific and will take precedence over your generic User settings
+
+## Important!
+
+- The `npm` script `format` is currently formatted in a strange way
+
+```json
+"format": "prettier-eslint --write $PWD/\"src/**/*.js\""
+```
+
+- This is required due to [this issue](https://github.com/prettier/prettier-eslint-cli/issues/208)
+- The issue should be solved shortly, as a [pull request](https://github.com/prettier/prettier-eslint-cli/pull/259) is pending
+- If you are on Windows, you will have to reduce your version of `eslint` to `6.0.0`
