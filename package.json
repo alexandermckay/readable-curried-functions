@@ -1,0 +1,19 @@
+{
+  "name": "fp-linting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier-eslint --write $PWD/\"src/**/*.js\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.6.0",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
